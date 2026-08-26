@@ -1,14 +1,14 @@
 class Solution {
   int missingMultiple(List<int> nums, int k) {
     List<int> multiples = [];
-    int result = 0;
+    int result = k;
     nums.sort();
     for (var num in nums) {
       if (num % k == 0) {
         multiples.add(num);
       }
     }
-    print(multiples);
+    //print(multiples);
     List<int> Multiples = multiples.toSet().toList();
     for (int i = 0; i < Multiples.length; i++) {
       if (Multiples[i] != k && Multiples.isNotEmpty) {
@@ -21,7 +21,7 @@ class Solution {
         result = k * (i + 2);
       }
     }
-    print(result);
+    //print(result);
     return result;
   }
 }
@@ -31,5 +31,5 @@ void main() {
   int k = 7;
   Solution s = Solution();
   int answer = s.missingMultiple(nums, k);
-  //print(answer);
+  print(answer);
 }

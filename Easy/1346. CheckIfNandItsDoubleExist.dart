@@ -25,7 +25,7 @@ class Solution {
 }
 
 int BinarySearch(List<int> arr, int item) {
-  int low = 0, high = arr.length, mid = 0;
+  int low = 0, high = arr.length - 1, mid = 0;
   while (low <= high) {
     mid = low + (high - low) ~/ 2;
     if (arr[mid] == item)

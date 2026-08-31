@@ -1,5 +1,3 @@
-import 'dart:collection';
-
 void main() {
   List<int> arr = [10, 2, 5, 3];
   Solution S = Solution();

@@ -1,5 +1,5 @@
 void main() {
-  int num = -4;
+  int num = 16;
   Solution S = Solution();
   bool ans = S.isPerfectSquare(num);
   if (ans)

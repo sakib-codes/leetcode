@@ -11,6 +11,7 @@ void main() {
 
 class Solution {
   int search(List<int> nums, int target) {
+    nums.sort();
     int left = 0, right = nums.length - 1, mid = 0;
     while (left <= right) {
       mid = left + (right - left) ~/ 2;
